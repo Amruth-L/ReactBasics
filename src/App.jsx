@@ -8,13 +8,19 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div style={{ background: "#dfe6e9", height: "100vh", width: "100vw" }}>
-      <div class={{ display: "flex", justifyContent: "center" }}>
-        <div><div><PostComponent /><br /></div>
-          <div> <PostComponent /><br /></div>
-          <div> <PostComponent /><br /></div>
-        </div >
-      </div >
+    <div style={{
+      background: "#dfe6e9", height: "100vh", width: "100vw", display: "flex", justifyContent: "center"
+    }}>
+      {/* <div class={{
+        display: "flex", justifyContent:
+          "center"
+      }}> */}
+      <ProfileComponent />
+      <div class={{ display: "flex" }}>
+        <div><PostComponent /><br /></div>
+        <div> <PostComponent /><br /></div>
+        <div> <PostComponent /><br /></div>
+      </div>
     </div >
   )
 }
@@ -34,4 +40,18 @@ function PostComponent() {
         what to know how to win big?</div></div>
   )
 }
+function ProfileComponent() {
+  const cardStyle = { display: "flex", flexDirection: "column", alignItems: "center", padding: "20px", backgroundColor: "white", width: "200px" };
+  return (
+    <div style={{ cardStyle }}>
+      <img src={"https://www.w3schools.com/w3images/team2.jpg"} style={{ width: 80, height: 80, borderRadius: 10, backgroundColor: 'lightblue' }} />
+      <div style={{ marginLeft: 15 }}>
+        <b style={{ fontSize: 16, }}>JOE</b>
+        <div style={{ fontSize: 12, color: 'green' }}>Software Engineering</div>
+      </div>
+    </div>
+  )
+
+}
+
 export default App
