@@ -8,13 +8,13 @@ function LinkedInFeed() {
             <ProfileCard
                 name="Amruth L"
                 role="Frontend Developer"
-                isHiring={true}
+
             />
 
             <ProfileCard
                 name="Rahul K"
                 role="Data Analyst"
-                isHiring={false}
+
             />
         </div>
     );
